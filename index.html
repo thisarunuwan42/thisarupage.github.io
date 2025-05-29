@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title><!--this shows in name of the tab-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Web Developer & Designer</p>
+        </div>
+        <!-- Animated circles for background -->
+        <div class="circle" style="width: 50px; height: 50px; left: 10%; top: 20%;"></div>
+        <div class="circle" style="width: 30px; height: 30px; left: 30%; top: 50%;animation-delay: 2s; "></div>
+        <div class="circle" style="width: 40px; height: 40px; left: 60%; top: 30%;animation-delay: 3s; "></div>
+        <div class="circle" style="width: 10px; height: 10px; left: 0%; top: 100%;animation-delay: 4s; "></div>
+        <div class="circle" style="width: 60px; height: 60px; left: 80%; top: 60%; animation-delay: 5s;"><!--to delay 6s--></div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a beginner web developer learning HTML, CSS, and JavaScript. This portfolio showcases what I've learned so far.</p>
+            <p>Here are some of my interests:</p>
+            <ul>
+                <li>Web Development</li>
+                <li>Graphic Design</li>
+                <li>Photography</li>
+                <li>Technology</li>
+                <li>Travel</li>
+            </ul>
+        </section>
+        
+        <section id="projects">
+            <h2>My Projects</h2>
+            <p>Here are some projects I've worked on while learning web development:</p>
+            <ol>
+                <li>Personal Blog Website</li>
+                <li>Restaurant Menu Page</li>
+                <li>Weather App Interface</li>
+                <li>To-Do List Application</li>
+                <li>Photo Gallery</li>
+            </ol>
+        </section>
+        
+        <section id="skills">
+            <h2>My Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                        <th>Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermediate</td>
+                        <td>6 months</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Intermediate</td>
+                        <td>6 months</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Beginner</td>
+                        <td>3 months</td>
+                    </tr>
+                    <tr>
+                        <td>Responsive Design</td>
+                        <td>Beginner</td>
+                        <td>2 months</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <!-- Online image links -->
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=200" alt="Coding">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=200" alt="Computer">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=200" alt="Programming">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=200" alt="Laptop">
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=200" alt="Code">
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" onsubmit="return submitForm()">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <p>Connect with me: 
+            <a href="https://twitter.com" target="_blank" class="socialname">Twitter</a> | 
+            <a href="https://linkedin.com" target="_blank"class="socialname">LinkedIn</a> | 
+            <a href="https://github.com" target="_blank"class="socialname">GitHub</a> | 
+            <a href="https://instagram.com" target="_blank"class="socialname">Instagram</a> | 
+            <a href="https://facebook.com" target="_blank"class="socialname">Facebook</a><br></p><p class="socialmedialogo"><div class="socialmedialogo">
+            connect with me:<br>
+            <a href="https://twitter.com" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHDhjypgRklncOY5oZJLLQ3TysrcwWN4gfg&s" alt="twitter logo contact" class="twitterimage"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="https://thumbs.dreamstime.com/b/linkden-154683363.jpg" alt="linkedin logo" class="twitterimage"></a>
+            <a href="https://github.com" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTevzZpuIEQxaOMTporsNlPsY5ISwdo7m6LVA&s" alt="github logo" class="twitterimage"></a>
+            <a href="https://instagram.com" target="_blank"><img src="https://img.freepik.com/premium-vector/instagram-vector-logo-icon-social-media-logotype_901408-392.jpg?semt=ais_hybrid&w=740" alt="instegram logo" class="twitterimage"></a>
+            <a href="https://facebook.com" target="_blank"><img src="https://img.freepik.com/premium-psd/facebook-social-media-icon-3d_466778-4384.jpg?semt=ais_items_boosted&w=740" alt="facebook logo" class="twitterimage"></a>
+        </div></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
